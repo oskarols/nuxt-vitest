@@ -5,6 +5,7 @@
   <NuxtLink to="/test">
     Test link
   </NuxtLink>
+  <InjectedValueComponent />
 </template>
 
 <script setup>

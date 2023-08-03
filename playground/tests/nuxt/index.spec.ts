@@ -6,6 +6,7 @@ import App from '~/app.vue'
 import FetchComponent from '~/components/FetchComponent.vue'
 import OptionsComponent from '~/components/OptionsComponent.vue'
 import WrapperTests from '~/components/WrapperTests.vue'
+import InjectedComponent from '~/components/InjectedComponent.vue'
 
 describe('client-side nuxt features', () => {
   it('can use core nuxt composables within test file', () => {
@@ -52,7 +53,8 @@ describe('test utils', () => {
       "<div>This is an auto-imported component</div>
       <div> I am a global component </div>
       <div>Index page</div>
-      <a href=\\"/test\\"> Test link </a>"
+      <a href=\\"/test\\"> Test link </a>
+      <div></div>"
     `)
   })
 
@@ -124,7 +126,8 @@ describe('test utils', () => {
       "<div>This is an auto-imported component</div>
       <div> I am a global component </div>
       <div>/</div>
-      <a href=\\"/test\\"> Test link </a>"
+      <a href=\\"/test\\"> Test link </a>
+      <div></div>"
     `)
   })
 })
